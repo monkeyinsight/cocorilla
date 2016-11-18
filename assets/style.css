@@ -62,23 +62,26 @@ html, body {
 
 .gorilla {
 	margin-top: 10px;
-	width: 210px;
-	min-width: 210px;
-	height: 165px;
-	background: url('./img/gorilla.png') right top no-repeat;
+	margin-left: -10px;
+	height: 129px;
+	width: 129px;
+	background-size: 129px 129px;
+	margin-right: 26px;
+	background-image: url('./img/gorilla.png');
+	background-repeat: no-repeat;
 }
 
 .quote {
 	text-align: right;
 	font-family: 'AmsiProCond-Ultra';
-	font-size: 30pt;
+	font-size: 17pt;
 	color: #58251A;
-	line-height: 36pt;
-	min-width: 305px;
+	line-height: 17pt;
+	margin-top: 13px;
 }
 
 .quote .b {
-	font-size: 41pt;
+	font-size: 23pt;
 	color: #fff;
 }
 
@@ -86,8 +89,9 @@ html, body {
 	font-family: 'AmsiProCond-Ultra';
 	font-size: 29pt;
 	color: #FFDE2F;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	width: 100%;
+	text-align: center;
 }
 
 input {
@@ -157,15 +161,25 @@ p {
 	padding: 0 10px;
 }
 
-@media screen and (min-width: 641px) {
-	.quote {
-		position: absolute;
-		left: 321px;
-		bottom: 98px;
-	}
+.c {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
 }
 
 @media screen and (min-width: 600px) {
+	.quote {
+		margin-top: 35px;
+	}
+	.gorilla {
+		height: 261px;
+		width: 261px;
+		margin-right: 26px;
+	}
+	.c {
+		min-width: 592px;
+	}
 	.header {
 		min-height: 420px;
 		height: 50%;
@@ -173,8 +187,6 @@ p {
 
 	.body {
 		position: relative;
-		height: 50%;
-		min-height: 500px;
 	}
 
 	.logo-link {
@@ -193,22 +205,21 @@ p {
 		height: 263px;
 	}
 
-	.gorilla {
-		height: 261px;
-		width: 261px;
-		margin-top: 0;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-
 	.form {
 		max-width: 600px;
 		float: right;
+		text-align: left;
+	}
+
+	.gorilla {
+		width: 261px;
+		height: 261px;
+		background-size: 261px 261px;
 	}
 
 	.quote {
 		font-size: 36pt;
+		line-height: 36pt;
 	}
 
 	.quote .b {
@@ -220,15 +231,18 @@ p {
 	}
 }
 
-@media screen and (min-width: 1270px) {
-	.body {
-		min-height: auto;
+@media screen and (min-width: 1200px) {
+	.c {
+		padding-top: 65px;
+	}
+	.form {
+		margin-top: 88px;
 	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.header {
-		background-image: url('./img/sep.png');
+		background-image: url('./img/2x/sep.png');
 		background-size: 78px 10px;
 	}
 
@@ -239,7 +253,6 @@ p {
 
 	.gorilla {
 		background-image: url('./img/2x/gorilla.png');
-		background-size: 261px 261px;
 	}
 
 	.social a {
@@ -249,10 +262,11 @@ p {
 
 	.logo {
 		background: url('./img/2x/logo-m.png') no-repeat;
+		background-size: 203px 65px;
 	}
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 600px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px) {
 	.logo-link {
 		background-image: url('./img/2x/logo-bg.png');
 		background-size: 1041px 215px;
