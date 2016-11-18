@@ -13,7 +13,10 @@ html, body {
 .header {
 	height: 170px;
 	text-align: center;
-	background: #FFDE2F url('./img/sep.png') bottom center repeat-x;
+	background-color: #FFDE2F;
+	background-image: url('./img/sep.png');
+	background-position: bottom center;
+	background-repeat: repeat-x;
 }
 
 .container {
