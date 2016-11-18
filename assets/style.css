@@ -239,7 +239,7 @@ p {
 
 	.social a {
 		background-image: url('./img/2x/social.png');
-		background-size: 50px 50px;
+		background-size: 203px 58px;
 	}
 
 	.logo {
@@ -247,7 +247,7 @@ p {
 	}
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 600px) {
 	.logo-link {
 		background-image: url('./img/2x/logo-bg.png');
 		background-size: 1041px 215px;
