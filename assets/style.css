@@ -1,0 +1,220 @@
+html, body {
+	background: #61B546;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.header {
+	height: 170px;
+	text-align: center;
+	background: #FFDE2F url('./img/sep.png') bottom center repeat-x;
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo-link {
+	padding-top: 24px;
+	display: block;
+}
+
+.logo {
+	display: inline-block;
+	background: url('./img/logo-m.png') no-repeat;
+	width: 203px;
+	height: 65px;
+}
+
+.social a {
+	display: inline-block;
+	background-image: url('./img/social.png');
+	height: 58px;
+	width: 58px;
+}
+
+.fb {
+	background-position: 0 0;
+}
+
+.tw {
+	background-position: -50px 0;
+}
+
+.in {
+	background-position: -100px 0;
+}
+
+.ml {
+	background-position: -150px 0;
+}
+
+.gorilla {
+	margin-top: 10px;
+	width: 210px;
+	min-width: 210px;
+	height: 165px;
+	background: url('./img/gorilla.png') right top no-repeat;
+}
+
+.quote {
+	text-align: right;
+	font-family: 'AmsiProCond-Ultra';
+	font-size: 30pt;
+	color: #58251A;
+	line-height: 36pt;
+	min-width: 305px;
+}
+
+.quote .b {
+	font-size: 41pt;
+	color: #fff;
+}
+
+.form {
+	font-family: 'AmsiProCond-Ultra';
+	font-size: 29pt;
+	color: #FFDE2F;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+input {
+	font-family: 'AmsiProCond';
+	font-size: 21pt;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px #fff solid;
+	width: 48%;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	color: #fff;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+input::-moz-placeholder {
+  color: #fff;
+}
+input:-ms-input-placeholder {
+  color: #fff;
+}
+input:-moz-placeholder {
+  color: #fff;
+}
+
+button {
+	background: url('./img/button.png');
+	width: 134px;
+	height: 36px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.error {
+	min-height: 32px;
+	font-size: 18pt;
+	font-family: 'AmsiProCond';
+	font-weight: bold;
+}
+
+.title {
+	font-size: 36pt;
+	font-family: 'AmsiProCond-Ultra';
+	color: #fff;
+}
+
+.success {
+	font-family: 'AmsiProCond';
+	font-size: 28pt;
+	line-height: 30pt;
+}
+
+.body {
+	padding: 0 10px;
+}
+
+@media screen and (min-width: 641px) {
+	.quote {
+		position: absolute;
+		left: 321px;
+		bottom: 98px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.header {
+		min-height: 420px;
+		height: 50%;
+	}
+
+	.body {
+		position: relative;
+		height: 50%;
+		min-height: 500px;
+	}
+
+	.logo-link {
+		padding-top: 0;
+		max-width: 1041px;
+		width: 100%;
+		min-height: 215px;
+		margin: 0 auto;
+		background: url('./img/logo-bg.png') 50% 24px no-repeat;
+	}
+
+	.logo {
+		margin-top: 48px;
+		background: url('./img/logo.png') no-repeat;
+		width: 252px;
+		height: 263px;
+	}
+
+	.gorilla {
+		height: 261px;
+		width: 261px;
+		margin-top: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.form {
+		max-width: 600px;
+		float: right;
+	}
+
+	.quote {
+		font-size: 36pt;
+	}
+
+	.quote .b {
+		font-size: 47pt;
+	}
+
+	input {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1270px) {
+	.body {
+		min-height: auto;
+	}
+}
