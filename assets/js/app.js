@@ -24,12 +24,12 @@ function add_error(txt) {
 
 $('form').onsubmit = function (e) {
 	if (!$('input[name="name"]').value) {
-		add_error('You must enter Name.');
+		add_error('Please enter your Name.');
 		return false;
 	}
 
 	if (!$('input[name="email"]').value) {
-		add_error('You must enter Email.');
+		add_error('Please enter your Email.');
 		return false;
 	} else if (!/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test($('input[name="email"]').value)) {
 		add_error('Wrong Email.');
@@ -37,12 +37,7 @@ $('form').onsubmit = function (e) {
 	}
 
 	if (!$('input[name="city"]').value) {
-		add_error('You must enter City.');
-		return false;
-	}
-
-	if (!$('input[name="state"]').value) {
-		add_error('You must enter State.');
+		add_error('Please enter your City / Town.');
 		return false;
 	}
 
