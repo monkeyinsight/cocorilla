@@ -229,14 +229,17 @@ p {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	button {
 		background-image: url('./img/2x/button.png');
+		background-size: 134px 36px;
 	}
 
 	.gorilla {
-		background-image: url('./img/2x/gorilla.png')
+		background-image: url('./img/2x/gorilla.png');
+		background-size: 261px 261px;
 	}
 
 	.social a {
 		background-image: url('./img/2x/social.png');
+		background-size: 50px 50px;
 	}
 
 	.logo {
@@ -247,8 +250,10 @@ p {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.logo-link {
 		background-image: url('./img/2x/logo-bg.png');
+		background-size: 1041px 215px;
 	}
 	.logo {
 		background-image: url('./img/2x/logo.png');
+		background-size: 253px 263px;
 	}
 }
