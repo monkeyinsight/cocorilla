@@ -67,6 +67,7 @@ html, body {
 	margin-right: 26px;
 	background-image: url('./img/gorilla.png');
 	background-repeat: no-repeat;
+	margin-left: -10px;
 }
 
 .quote {
