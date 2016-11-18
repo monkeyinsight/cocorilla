@@ -227,6 +227,11 @@ p {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.header {
+		background-image: url('./img/sep.png');
+		background-size: 78px 10px;
+	}
+
 	button {
 		background-image: url('./img/2x/button.png');
 		background-size: 134px 36px;
