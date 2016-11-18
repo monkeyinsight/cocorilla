@@ -46,6 +46,20 @@ $('form').onsubmit = function (e) {
 		return false;
 	}
 
+	var http = new XMLHttpRequest();
+	var url = "send.php";
+	var params = "name=" + $('input[name="name"]').value + "&email=" + $('input[name="email"]').value + "&city=" + $('input[name="city"]').value + "&state=" + $('input[name="state"]').value;
+	http.open("POST", url, true);
+
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+	http.onreadystatechange = function() {
+	    if(http.readyState == 4 && http.status == 200) {
+	        alert(http.responseText);
+	    }
+	}
+	http.send(params);
+
 	addClass(this, 'hidden');
 	removeClass($('.success'), 'hidden');
 	return false;

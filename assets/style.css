@@ -225,3 +225,30 @@ p {
 		min-height: auto;
 	}
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+	button {
+		background-image: url('./img/2x/button.png');
+	}
+
+	.gorilla {
+		background-image: url('./img/2x/gorilla.png')
+	}
+
+	.social a {
+		background-image: url('./img/2x/social.png');
+	}
+
+	.logo {
+		background: url('./img/2x/logo-m.png') no-repeat;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-width: 600px) {
+	.logo-link {
+		background-image: url('./img/2x/logo-bg.png');
+	}
+	.logo {
+		background-image: url('./img/2x/logo.png');
+	}
+}
