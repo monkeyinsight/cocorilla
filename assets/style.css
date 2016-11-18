@@ -101,6 +101,7 @@ input {
 	padding: 0;
 	outline: 0;
 	color: #fff;
+	-webkit-appearance: none;
 }
 
 input::-webkit-input-placeholder {
