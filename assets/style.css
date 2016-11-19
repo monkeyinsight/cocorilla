@@ -61,7 +61,7 @@ html, body {
 }
 
 .gorilla {
-	height: 129px;
+	height: 121px;
 	width: 129px;
 	background-size: 129px 129px;
 	margin-right: 26px;
@@ -168,11 +168,15 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+	.wrapper {
+		height: 100%;
+		min-height: 1090px;
+	}
 	.quote {
 		margin-top: 35px;
 	}
 	.gorilla {
-		height: 261px;
+		height: 246px;
 		width: 261px;
 		margin-right: 26px;
 	}
@@ -186,6 +190,7 @@ p {
 
 	.body {
 		position: relative;
+		margin-top: -519px;
 	}
 
 	.logo-link {
@@ -210,8 +215,12 @@ p {
 		text-align: left;
 	}
 
+	button {
+		margin-right: 120px;
+	}
+
 	.gorilla {
-		width: 261px;
+		width: 246px;
 		height: 261px;
 		background-size: 261px 261px;
 	}
@@ -231,11 +240,19 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+	.wrapper {
+		min-height: 750px;
+	}
 	.c {
 		padding-top: 65px;
 	}
 	.form {
 		margin-top: 88px;
+		margin-bottom: 0;
+	}
+	.body {
+		position: relative;
+		margin-top: -326px;
 	}
 }
 

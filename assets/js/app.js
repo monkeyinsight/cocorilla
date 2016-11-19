@@ -24,15 +24,15 @@ function add_error(txt) {
 
 $('form').onsubmit = function (e) {
 	if (!$('input[name="name"]').value) {
-		add_error('Please enter your Name.');
+		add_error('Please enter your name.');
 		return false;
 	}
 
 	if (!$('input[name="email"]').value) {
-		add_error('Please enter your Email.');
+		add_error('Please enter your email.');
 		return false;
 	} else if (!/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test($('input[name="email"]').value)) {
-		add_error('Wrong Email.');
+		add_error('Please enter valid email.');
 		return false;
 	}
 
