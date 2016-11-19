@@ -156,8 +156,14 @@ p {
 	line-height: 30pt;
 }
 
+.wrapper {
+	height: 100%;
+	min-height: 605px;
+}
+
 .body {
 	padding: 0 10px;
+	margin-top: -430px;
 }
 
 .c {
@@ -169,7 +175,6 @@ p {
 
 @media screen and (min-width: 600px) {
 	.wrapper {
-		height: 100%;
 		min-height: 1090px;
 	}
 	.quote {
@@ -190,7 +195,7 @@ p {
 
 	.body {
 		position: relative;
-		margin-top: -519px;
+		margin-top: -504px;
 	}
 
 	.logo-link {
@@ -220,8 +225,8 @@ p {
 	}
 
 	.gorilla {
-		width: 246px;
-		height: 261px;
+		width: 261px;
+		height: 246px;
 		background-size: 261px 261px;
 	}
 
@@ -247,12 +252,12 @@ p {
 		padding-top: 65px;
 	}
 	.form {
-		margin-top: 88px;
+		margin-top: 70px;
 		margin-bottom: 0;
 	}
 	.body {
 		position: relative;
-		margin-top: -326px;
+		margin-top: -311px;
 	}
 }
 
